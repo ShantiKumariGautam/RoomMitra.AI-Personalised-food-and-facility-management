@@ -1,0 +1,48 @@
+/* .rumi-container {
+    background-color: #e6f4ff;
+    min-height: 100vh;
+    padding: 30px;
+    font-family: 'Segoe UI', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+  }
+  
+  .rumi-chatbox {
+    background: #fff;
+    border-radius: 20px;
+    padding: 30px;
+    max-width: 700px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+  }
+  
+  .chat-bubble {
+    margin: 10px 0;
+    padding: 15px 20px;
+    border-radius: 15px;
+    width: fit-content;
+    max-width: 90%;
+  }
+  
+  .rumi {
+    background-color: #d1ecf1;
+    align-self: flex-start;
+  }
+  
+  .user {
+    background-color: #fce4ec;
+    align-self: flex-end;
+  }
+  
+  .rumi-features {
+    margin-top: 30px;
+  }
+  
+  .feature {
+    display: flex;
+    align-items: flex-start;
+    gap: 15px;
+    margin-bottom: 20px;
+  }
+
+   */
