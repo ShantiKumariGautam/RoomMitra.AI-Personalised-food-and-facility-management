@@ -1,70 +1,155 @@
-# Getting Started with Create React App
+# RoomMitra.AI  
+From Food to Mood, It's All Understood
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+RoomMitra.AI is a lifestyle and emotional wellness companion designed for students and professionals living away from home. It offers smart food recommendations, mood-aware support, environmental comfort control, and a friendly AI chatbot named RUMI. This project was built by Team TechMinds (Shanti Kumari Gautam and Sneha Kumari) from IGDTUW, and was presented at the Nagarro Hackathon 2025, held in Gurugram.
 
-## Available Scripts
+---
 
-In the project directory, you can run:
+## Problem Statement
 
-### `npm start`
+Living away from home often leads to unhealthy routines, missed meals, and emotional isolation. RoomMitra.AI was built to tackle this problem. It aims to act as a friend, guide, and support system for students and working professionals in shared accommodations, PGs, or hostels.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+---
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Solution Overview
 
-### `npm test`
+RoomMitra.AI provides:
+- Personalized meal recommendations using Spoonacular API
+- Mood and hydration reminders
+- A dashboard to adjust room environment preferences
+- An empathetic chatbot named RUMI that offers emotional support
+- Long-term plans to integrate smart IoT features and community-based wellness features
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+---
 
-### `npm run build`
+## Key Features
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+1. **RUMI – AI Chat Companion**  
+   Deployed at: [https://shantikumarigautam.github.io/rumi](https://shantikumarigautam.github.io/rumi)  
+   RUMI listens empathetically, sends check-ins, and acts as a non-judgmental digital companion for emotional well-being.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+2. **Smart Meal Recommendation**  
+   Based on user diet, cuisine, and goals (e.g., weight gain, calorie control). Powered by Spoonacular API.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+3. **Comfort Automation Dashboard (Prototype)**  
+   Allows users to adjust room temperature, lights, and fan preferences. Future integration with MQTT and IoT devices planned.
 
-### `npm run eject`
+4. **Mood & Hydration Reminders**  
+   Sends subtle and non-intrusive reminders to hydrate, rest, or breathe.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+5. **User-Centric Interface**  
+   Clean, minimal, responsive interface built using React.js and Firebase.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+---
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## Live Demo
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+- Chatbot RUMI (Live): [https://shantikumarigautam.github.io/rumi](https://shantikumarigautam.github.io/rumi)
 
-## Learn More
+---
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Tech Stack
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+**Frontend**: React.js  
+**Backend**: Flask (Python)  
+**Authentication & DB**: Firebase  
+**Food Intelligence**: Spoonacular API  
+**Deployment**: GitHub Pages (for RUMI), Firebase (planned)  
+**Future Additions**: MQTT for IoT, Google Fit API, voice integration
 
-### Code Splitting
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
 
-### Analyzing the Bundle Size
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+## Setup Instructions
 
-### Making a Progressive Web App
+### 1. Clone the repository
+git clone https://github.com/your-username/RoomMitra.AI.git
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
 
-### Advanced Configuration
+### 2. Backend (Flask)
+cd RoomMitra.AI/backend
+python -m venv venv
+source venv/bin/activate # or venv\Scripts\activate on Windows
+pip install -r requirements.txt
+python app.py
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
 
-### Deployment
+### 3. Frontend (React)
+cd ../frontend
+npm install
+npm start
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
 
-### `npm run build` fails to minify
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## API Reference – Spoonacular
+
+Used for generating meal suggestions based on:
+- Diet type: vegetarian / vegan / non-veg
+- Cuisine: Indian, Chinese, etc.
+- Fitness goals: calorie control, protein-rich meals
+
+Example API Call:
+GET https://api.spoonacular.com/recipes/complexSearch?diet=vegetarian&cuisine=indian&maxCalories=500&apiKey=your_api_key
+
+
+---
+
+## Future Features
+
+- Voice Assistant Integration using Google Speech API or Whisper
+- Multilingual Support with Indian regional languages (Hindi, Marathi, Gujarati, etc.)
+- IoT-based automation using MQTT and NodeMCU
+- Fitness Tracking via Google Fit or Fitbit APIs
+- Gamified user engagement (badges, streaks)
+- Parent Companion Dashboard
+- Emergency health alerts and emotional anomaly detection
+- Community features for peer support and safe anonymous chats
+
+---
+
+## Dataset Details
+
+- Uses real-time emotional patterns collected from student surveys
+- Nutrition data sourced through Spoonacular
+- WHO and Healthline data used to link deficiencies (e.g., Vitamin D, Iron) with mood and food suggestions
+
+---
+
+## References
+
+- Spoonacular Food API  
+- Firebase Documentation  
+- WHO Report on Vitamin Deficiency  
+- Healthline articles on iron and mental health  
+- OCD Mental Health Statistics (NOCD)  
+- Oregon State University Vitamin D Study
+
+---
+
+## Team
+
+**Team TechMinds – IGDTUW**
+
+- **Shanti Kumari Gautam**  
+ 
+- **Sneha Kumari**  
+ 
+---
+
+## License
+
+This project is licensed under the MIT License.
+
+---
+
+## Closing Note
+
+RUMI cares like a real friend would.  
+From food to mood, it’s all understood.  
+Not just smart, but kind and true —  
+RoomMitra is here to care for you.
+
+
