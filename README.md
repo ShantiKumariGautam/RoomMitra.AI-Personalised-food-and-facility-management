@@ -25,7 +25,7 @@ RoomMitra.AI provides:
 ## Key Features
 
 1. **RUMI – AI Chat Companion**  
-   Deployed at: [https://shantikumarigautam.github.io/rumi](https://shantikumarigautam.github.io/rumi)  
+   Deployed at: [https://shantikumarigautam.github.io/rumi]([https://shantikumarigautam.github.io/rumi](https://shantikumarigautam.github.io/RoomMitra.AI-Personalised-food-and-facility-management/))  
    RUMI listens empathetically, sends check-ins, and acts as a non-judgmental digital companion for emotional well-being.
 
 2. **Smart Meal Recommendation**  
@@ -44,7 +44,7 @@ RoomMitra.AI provides:
 
 ## Live Demo
 
-- Chatbot RUMI (Live): [https://shantikumarigautam.github.io/rumi](https://shantikumarigautam.github.io/rumi)
+- Chatbot RUMI (Live): [https://shantikumarigautam.github.io/rumi]([https://shantikumarigautam.github.io/rumi](https://shantikumarigautam.github.io/RoomMitra.AI-Personalised-food-and-facility-management/))
 
 ---
 
