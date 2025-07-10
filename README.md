@@ -1,5 +1,5 @@
 # RoomMitra.AI  
-From Food to Mood, It's All Understood
+## From Food to Mood, It's All Understood
 
 RoomMitra.AI is a lifestyle and emotional wellness companion designed for students and professionals living away from home. It offers smart food recommendations, mood-aware support, environmental comfort control, and a friendly AI chatbot named RUMI. This project was built by Team TechMinds (Shanti Kumari Gautam and Sneha Kumari) from IGDTUW, and was presented at the Nagarro Hackathon 2025, held in Gurugram.
 
